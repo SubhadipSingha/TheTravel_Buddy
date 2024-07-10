@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    font-family: sans-serif;  
+    margin: 0;  
+    padding:  5px ; 
+    background:  #90c68a;
+  }
+  
+  h1 {
+    text-align: center;  
+    font-size: 2em;  
+    margin-bottom: 20px;  
+  }
+  
+  .search-container {
+    display: flex;  
+    justify-content: space-between;  
+    margin-bottom: 20px;  
+  }
+  
+  #searchValue {
+    width: 50%;
+    height: 50px;
+    padding: 10px;  
+    margin: 10px 10px 10px 10px ;
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    
+  }
+  
+  #submitbtn {
+    padding: 10px  90px 10px 50px;  
+    background-color: #333;  
+    color: #fff;
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer; 
+    height: 50px;
+    width: 70px;
+   font-weight: bold;
+   font-size: larger;
+  }
+  
+  .sights-container {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 10px;  
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 90px 10px;
+    
+  }
+  
+  .sight {
+    width: 250px;  
+    background-color: #fff; 
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+    padding: 10px;  
+    height: 450px;
+  }
+  .sight:hover{
+    box-shadow: 0px 2px 90px 0px black;
+    transform: scale(1.2); 
+    animation-duration: 0.2s;
+  }
+  .sight img {
+    width: 100%;  
+    border-radius: 5px;  
+  }
+  
+  .sight h3 {
+    margin-top: 0;  
+    font-weight: bold;  
+  }
+  
+  .sight p {
+    margin-top: 10px; 
+    font-size: 0.8em;  
+    color: #999; 
+  }
+  .ScearchTool{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+  }
+.allcontent{
+  background-image: url('../assets/back.gif');
+  height: 350px;
+  border-radius: 20px;
+}
+
+  .Finder{
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.152);
+
+  }
+.Finder a{
+  margin-left:20% ;
+  background-color: transparent;
+  padding: 10px 20px 10px 20px ;
+  border-radius: 20px;
+  text-decoration: solid;
+ text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.342);
+}
+.Finder h1{
+  margin-right: 50%;
+  margin-top: 10px;
+}
+
+
+  
+.Finder a:hover{
+  color:  black;
+  background-color: rgb(202, 202, 202);
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.303);
+}
+
+.ScearchTool input:hover{
+  box-shadow: 2px 2px 50px 5px rgba(0, 0, 0, 0.523);
+  transform: scale(1.1); 
+  animation-duration: 0.5s;
+  
+}
+
+.ScearchTool button:hover{
+  box-shadow: 2px 2px 50px 5px rgba(0, 0, 0, 0.325);
+  transform: scale(1.1); 
+  animation-duration: 0.5s;
+}
+#submitbtn:hover{
+ 
+background-color: aliceblue;
+color: #000;
+
+}
+.View-Details , .savebtn{
+  padding: 5px  5px 5px 5px;  
+  background-color: #03676e;  
+  color: #fff;
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer; 
+  height: 40px;
+  width: 100px;
+ 
+
+}
+.savebtn:hover{
+  background-color:  #fff;
+color:  #03676e;
+border: 2px solid#000;
+}
+.View-Details:hover{
+  background-color:  #fff;
+color:  #03676e;
+border: 2px solid#000;
+}
+

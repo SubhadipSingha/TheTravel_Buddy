@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(to bottom right, #b3e5fc, #b3ffab);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: row; /* Align buttons side-by-side */
+}
+
+.hero-buttons .btn {
+    background-color: transparent;  /* Make the hero buttons transparent */
+    color: #333;
+    border: 2px solid #333;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about{
+    background: linear-gradient(to bottom right,#ff8000, #f5ff6f);
+}
+.service{
+    background: linear-gradient(to bottom right,rgb(75, 7, 143), #e53b3b);
+}
+
+.testimonial{
+    background: linear-gradient(to bottom right,rgb(87, 129, 255), #13dd2d);
+}
+
+.contact {
+    background: linear-gradient(to bottom right,rgb(0, 191, 255), #ff00d4);
+}
+
+.about h2,.testimonial h2, .contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p,.testimonial p, .contact p {
+    font-size: 30px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.service p,.service h2{
+    font-size: 30px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.service-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-gallery img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    border-radius: 10px;
+}
+
+.service-gallery .service-item {
+    position: relative;
+}
+
+.service-gallery .service-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+}
+
+.service-gallery .service-item:hover .service-content {
+    opacity: 1;
+}
+
+.service-gallery .service-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.service-gallery .service-content p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    text-align: center;
+    max-width: 80%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-container {
+    margin: 20px auto;
+    width: 750px;
+    height: 420px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 750px;
+    height: 420px;
+}
+
+.testimonial-slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.testimonial-slide {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+    opacity: 0; /* Start with the slide hidden */
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1; /* Show the slide */
+}
+
+.rating {
+    color: gold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+}
